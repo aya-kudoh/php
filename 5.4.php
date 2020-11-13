@@ -1,10 +1,19 @@
 <?php
-function triangle_area ($a , $h){
-    return $a * $h / 2;
+$file_list = [];
+function add_list ($name){
+    global $file_list;
+    $file_name = $name.".php";
+    array_push($file_list,$file_name);
     
 }
 
-print(triangle_area(2,3));
+add_list("function");
+var_dump($file_list);
+
+add_list("hello");
+var_dump($file_list);
+
+
 
 
 ?>

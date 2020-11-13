@@ -1,9 +1,10 @@
 <?php
-function calc ($a , $b){
-    print($a * $b);
+function triangle_area ($a , $h){
+    return $a * $h / 2;
     
 }
 
-calc(2,3);
+print(triangle_area(2,3));
+
 
 ?>

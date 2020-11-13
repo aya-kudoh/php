@@ -3,6 +3,6 @@ function hello ($str){
     print($str);
 }
 
-hello("Hello World!");
+hello("Hello PHP!");
 
 ?>

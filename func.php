@@ -1,8 +1,8 @@
 <?php
-function hello ($str){
-    print($str);
+function hello ($a,$b){
+    print($a + $b);
 }
 
-hello("Hello PHP!");
+hello(21,29);
 
 ?>

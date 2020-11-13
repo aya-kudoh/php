@@ -1,6 +1,6 @@
 # restaurants_searcher.php
 
 <?php
-$restaurants = "hogehoge";
+$restaurants = [];
 $response = "hugahuga";
 ?>

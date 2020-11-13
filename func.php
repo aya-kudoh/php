@@ -1,10 +1,10 @@
 <?php
-function hello ($a = 21){
-    print($a);
+function add ($a, $b){
+    return $a + $b;
 }
 
-hello();
+$num = add(2,3);
+print($num);
 
-hello("Hello");
 
 ?>

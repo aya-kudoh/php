@@ -8,6 +8,14 @@ function write_date_to_csv(){
     return print("エラーが発生しました");
     }
     
+    if(isset($response["rest"])){
+        foreach($response["rest"] as $i){
+            $restaurant_name = $i["name"];
+            $restaurants[] = $restaurant_name;
+        }
+    }
+    
+    
     return print_r($restaurants);
     
 }

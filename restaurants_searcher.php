@@ -1,4 +1,8 @@
 <?php
+require 'vendor/autoload.php';
+
+use GuzzleHttp\Client;
+
 function write_date_to_csv(){
     
     $restaurants = [];

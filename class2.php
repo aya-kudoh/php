@@ -1,20 +1,24 @@
 <?php
-class Human
-{
-    static $class_name = "Human";
-    
-    function init(){
-        $this->name = "大泉";
-    }
-    
-    public function show(){
-        print($this->name."\n");
-    }
+class Human{
+function __construct(){
+    $this->name = null;
+    $this->address = null;
+}
+  
+function show(){
+    print($this->name."\n");
+    print($this->address);
+  }
 }
 
-print(Human::$class_name);
+class Actor extends Human{}
 
+$actor = new Actor();
 
+$actor->name = "大泉";
+$actor->address = "北海道";
+
+$actor->show();
 
 
 
